@@ -1,0 +1,10 @@
+applications:
+- name: attendee-service
+  disk_quota: 1G
+  instances: 1
+  memory: 750M
+  routes:
+  - route: attendee-service-daring-turtle.cfapps.io
+  services:
+  - attendee-mysql
+  stack: cflinuxfs2
